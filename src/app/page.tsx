@@ -20,8 +20,8 @@ export default function Home() {
 function Consulting() {
   return (
     <div className="w-full">
-      <h2 className="heading-2">Services</h2>
-      <p>Digital commerce & brand consulting for Bermuda businesses</p>
+      <h2 className="heading-2">Consulting</h2>
+      <p>Digital commerce & brand strategy for Bermuda businesses</p>
     </div>
   );
 }
