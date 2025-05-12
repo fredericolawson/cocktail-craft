@@ -15,8 +15,17 @@ export default function RootLayout({ children}: Readonly<{ children: React.React
           <main className="flex-1 flex flex-col items-center justify-center max-w-screen-2xl mx-auto w-full">
             {children}
           </main>
+          <Footer />
         </div>
       </body>
     </html>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="flex justify-center items-center text-sm py-4">
+      Beam Bermuda Ltd &copy; {new Date().getFullYear()}
+    </footer>
   );
 }
