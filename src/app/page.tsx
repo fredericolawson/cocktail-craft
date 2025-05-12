@@ -40,7 +40,7 @@ function Products() {
         <ul className="flex flex-col gap-2">
           <LinkItem href="https://weather.beam.bm/" icon={<Radar />}>Weather</LinkItem>
           <LinkItem href="https://bermudaferries.com/" icon={<Ship />}>Bermuda Ferries</LinkItem>
-          <LinkItem href="https://www.whatson.bm/" icon={<Calendar />}>What's On Bermuda</LinkItem>
+          <LinkItem href="https://www.whatson.bm/" icon={<Calendar />}>What&#39;s On Bermuda</LinkItem>
         </ul>
       </div>
     </div>
