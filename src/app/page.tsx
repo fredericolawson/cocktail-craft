@@ -50,7 +50,7 @@ function Products() {
 function LinkItem({ href, children, icon }: { href: string; children: React.ReactNode; icon: React.ReactNode }) {
   return (
     <li>
-      <Link href={href} className="rounded-md bg-white border border-transparent p-2 flex items-center gap-2 hover:bg-gray-100 hover:border hover:border-gray-200">
+      <Link href={href} className="rounded-md bg-white border border-transparent p-2 flex items-center gap-2 hover:bg-gray-100 hover:border hover:border-gray-200 transition-all duration-200">
         {icon}
         {children}
       </Link>
