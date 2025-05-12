@@ -10,7 +10,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col md:flex-row gap-12">
         <Consulting />
-        <span className="h-46 my-auto flex-grow w-[2px] bg-gray-800" />
+        <span className="h-46 my-auto flex-grow w-[2px] bg-gray-500" />
         <Products />
       </div>
     </div>

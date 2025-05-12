@@ -12,7 +12,7 @@ export default function RootLayout({ children}: Readonly<{ children: React.React
   return (
     <html lang="en">
       <body className="flex flex-col">
-        <div className="min-h-screen bg-gray-100/50 flex-1 flex flex-col mx-auto w-full">
+        <div className="min-h-screen bg-gray-100/50 flex-1 flex flex-col mx-auto w-full text-gray-800">
           <main className="flex-1 flex flex-col items-center justify-center max-w-screen-2xl mx-auto w-full">
             {children}
           </main>
