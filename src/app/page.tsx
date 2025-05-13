@@ -6,10 +6,10 @@ import { Signup } from "@/components/signup";
 export default function Home() {
   return (
     
-      <div className="flex flex-col items-center justify-center h-full mb-18">
-        <h1 className="text-4xl font-bold my-4">Cocktail Craft</h1>
+      <div className="flex flex-col items-center justify-center flex-grow">
+        <h1 className="text-4xl font-bold my-8">Cocktail Craft</h1>
         <p className="text-lg mb-12 text-center">Bermuda's emergency cocktail service, delivered to your boat</p>
-          <Signup />
+        <Signup />
       </div>
   );
 }
