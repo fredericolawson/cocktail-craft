@@ -34,9 +34,7 @@ const formSchema = z.object({
 export function Signup() {
   
   return (
-
       <SignupForm />
-
   )
 }
 
@@ -55,7 +53,7 @@ function SignupForm({}) {
     },
   })
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setIsLoading(true);
     try {
       const result = await signup(data);
