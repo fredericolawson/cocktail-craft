@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Cocktail Craft",
-  description: "Emergency Cocktails, Delivered to your Boat",
+  description: "Bermuda's emergency cocktail service, delivered to your boat",
 };
 
 export default function RootLayout({ children}: Readonly<{ children: React.ReactNode }>) {
