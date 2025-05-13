@@ -73,7 +73,7 @@ function SignupForm({}) {
 
   if (isSuccess) {
     return (
-      <div className="bg-white p-4 md:p-8 rounded-lg border border-gray-200 w-full items-center justify-center flex flex-col gap-4 min-h-[400px]">
+      <div className="bg-white p-4 md:p-8 rounded-lg border border-gray-200 w-full items-center justify-center flex flex-col gap-4 min-h-[370px]">
         <CheckCircle className="w-8 h-8 text-green-500" />
         <div className="text-md max-w-sm text-center">
           Thank you for registering your interest in Cocktail Craft! More info coming soon.
@@ -83,7 +83,7 @@ function SignupForm({}) {
   }
 
   return (
-  <div className="bg-white p-4 md:p-8 rounded-lg border border-gray-200 w-full items-center flex flex-col gap-4 min-h-[400px]">
+  <div className="bg-white p-4 md:p-8 rounded-lg border border-gray-200 w-full items-center flex flex-col gap-4 min-h-[370px]">
     <h3 className="text-lg">
       Coming soon...
     </h3>
