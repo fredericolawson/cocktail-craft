@@ -7,11 +7,9 @@ export default function Home() {
   return (
     
       <div className="flex flex-col items-center justify-center h-full mb-18">
-        <h1 className="text-4xl font-bold mb-4">Cocktail Craft</h1>
-        <p className="text-lg mb-12">Bermuda's emergency cocktail service, delivered to your boat</p>
-
+        <h1 className="text-4xl font-bold my-4">Cocktail Craft</h1>
+        <p className="text-lg mb-12 text-center">Bermuda's emergency cocktail service, delivered to your boat</p>
           <Signup />
-
       </div>
   );
 }
