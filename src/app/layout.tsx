@@ -4,8 +4,8 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Beam",
-  description: "Digital Services for Bermuda",
+  title: "Cocktail Craft",
+  description: "Emergency Cocktails, Delivered to your Boat",
 };
 
 export default function RootLayout({ children}: Readonly<{ children: React.ReactNode }>) {
@@ -16,7 +16,6 @@ export default function RootLayout({ children}: Readonly<{ children: React.React
           <main className="flex-1 flex flex-col items-center justify-center max-w-screen-2xl mx-auto w-full">
             {children}
           </main>
-          <Footer />
         </div>
         <Analytics />
       </body>
