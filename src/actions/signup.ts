@@ -14,8 +14,8 @@ export async function signup(data: { email: string; notes?: string; product?: st
     apiKey: process.env.AIRTABLE_PAT,
   });
   
-  const base = airtable.base(process.env.AIRTABLE_BASE_ID as string);
-  const table = base(process.env.AIRTABLE_TABLE_NAME as string);
+  const base = airtable.base("app14yXmr6lxStObG");
+  const table = base("Interest");
 
   const record = await table.create({
     Email: email as string,

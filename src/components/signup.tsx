@@ -21,7 +21,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 
 
-
 const formSchema = z.object({
   email: z.string().email({
     message: "Invalid email address",
@@ -32,11 +31,11 @@ const formSchema = z.object({
 
 
 export function Signup() {
-  
   return (
       <SignupForm />
   )
 }
+
 
 function SignupForm({}) {
 
@@ -84,9 +83,6 @@ function SignupForm({}) {
 
   return (
   <div className="bg-white p-4 md:p-8 rounded-lg border border-gray-200 w-full items-center flex flex-col gap-4 min-h-[370px]">
-    <h3 className="text-lg">
-      Coming soon...
-    </h3>
     <h2 className="text-2xl font-bold mb-4">
       register here
     </h2>
