@@ -5,12 +5,11 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import { signup } from "@/actions/signup";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, XCircle } from "lucide-react";
 
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -32,12 +31,12 @@ const formSchema = z.object({
 
 export function Signup() {
   return (
-      <SignupForm />
+      <SignupForm product="Cocktail Craft" />
   )
 }
 
 
-function SignupForm({}) {
+function SignupForm({ product }: { product: string }) {
 
   const [isSuccess, setIsSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -48,7 +47,7 @@ function SignupForm({}) {
     defaultValues: {
         email: "",
         notes: "",
-        product: "Cocktail Craft",
+        product: product,
     },
   })
 
@@ -76,6 +75,17 @@ function SignupForm({}) {
         <CheckCircle className="w-8 h-8 text-green-500" />
         <div className="text-md max-w-sm text-center">
           Thank you for registering your interest in Cocktail Craft! More info coming soon.
+        </div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="bg-white p-4 md:p-8 rounded-lg border border-gray-200 w-full items-center justify-center flex flex-col gap-4 min-h-[370px]">
+        <XCircle className="w-8 h-8 text-red-500" />
+        <div className="text-md max-w-sm text-center">
+          An error occurred. Please try again.
         </div>
       </div>
     )
@@ -121,7 +131,6 @@ function SignupForm({}) {
         </Button>
       </form>
     </Form>
-    </div>
-
+  </div>
   );
 }
